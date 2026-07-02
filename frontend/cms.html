@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aplikasi Content Management System</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet" />
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#87CEEB">
+</head>
+<body>
+
+     <nav class="navbar">
+          <h2> Let's Write Something 😇</h2>
+   
+          <div class="nav-menu">
+            <a href="profile alifah.html">👩🏻‍🚀Profile</a>
+            <button id="theme-btn" class="theme-btn">🌙</button>
+            <button class="action-btn danger" id="clear-btn">Hapus Semua</button>
+          </div>
+     </nav>
+
+<div class="container">
+    
+    <h1>📖 Artikel</h1>
+
+    <div class="form-section">
+
+       <div class="form-article">
+          <label for="title">Judul Artikel</label>
+          <input type="text" id="title" placeholder="Masukan Judul...">
+        </div>
+        
+        <div class="form-article">
+           <label for="content">Isi Artikel</label>
+           <textarea id="content" placeholder="Tulis isi Artikel..."></textarea>
+        </div>
+
+        <button id="save-btn">Simpan Artikel</button>
+
+        <button id="cancel-btn" style="display:none;">Batal Edit</button>
+
+        <div id="success-msg" style="display: none;">
+        ✅ Artikel berhasil disimpan!
+        </div>
+
+      </div>
+
+      <hr>
+
+    
+      <h2> 📑 Daftar Artikel</h2>
+      <div id="list-article"></div>
+
+    </div>
+
+<script type="module" src="js/cms.js"></script>
+</body>
+</html> 
