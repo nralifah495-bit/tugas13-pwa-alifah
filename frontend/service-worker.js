@@ -28,3 +28,18 @@ self.addEventListener("fetch", (event) => {
     })
   );
 });
+
+self.addEventListener("push", (event) => {
+  const options = {
+    body: "Ada notifikasi baru dari CMS Alifah",
+    icon: "./assets/icons/icon-192.png",
+    badge: "./assets/icons/icon-192.png"
+  };
+
+  event.waitUntil(
+    self.registration.showNotification(
+      "CMS Artikel Alifah",
+      options
+    )
+  );
+});
