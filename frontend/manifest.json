@@ -1,0 +1,8 @@
+{
+  "name": "Aplikasi Content Management System",
+  "short_name": "CMS Alifah",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f5fbff",
+  "theme_color": "#4dabf7"
+}

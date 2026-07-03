@@ -3,6 +3,8 @@ from './api.js';
 
 const saveBtn =
 document.getElementById("save-btn");
+const clearBtn =
+document.getElementById("clear-btn");
 
 const titleInput =
 document.getElementById("title");
@@ -252,3 +254,18 @@ if ("serviceWorker" in navigator) {
 }
 
 
+clearBtn.addEventListener("click", async function () {
+  const yakin = confirm("Yakin ingin menghapus semua artikel?");
+
+  if (!yakin) return;
+
+  const articles = await getArticles();
+
+  for (const article of articles) {
+    await fetch(`http://127.0.0.1:5002/api/articles/${article.id}`, {
+      method: "DELETE"
+    });
+  }
+
+  await tampilArtikel();
+});
