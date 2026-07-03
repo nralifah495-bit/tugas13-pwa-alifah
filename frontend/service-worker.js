@@ -1,4 +1,4 @@
-const CACHE_NAME = "cms-alifah-v1";
+const CACHE_NAME = "cms-alifah-v2";
 
 const urlsToCache = [
   "/",
