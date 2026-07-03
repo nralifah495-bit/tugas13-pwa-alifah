@@ -1,7 +1,7 @@
 const CACHE_NAME = "cms-alifah-v2";
 
 const urlsToCache = [
-  
+
   "/cms.html",
   "/profile alifah.html",
   "/css/styles.css",
