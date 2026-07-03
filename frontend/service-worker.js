@@ -3,7 +3,6 @@ const CACHE_NAME = "cms-alifah-v1";
 const urlsToCache = [
   "/",
   "/cms.html",
-  "/login.html",
   "/profile alifah.html",
   "/css/styles.css",
   "/js/api.js",
@@ -13,12 +12,6 @@ const urlsToCache = [
   "/js/profile.js",
   "/manifest.json"
 ];
-  "/",
-  "/cms.html",
-  "/css/styles.css",
-  "/js/cms.js",
-  "/manifest.json"
-
 
 self.addEventListener("install", (event) => {
   event.waitUntil(

@@ -5,7 +5,7 @@ exports.getAllArticles = async (req, res) => {
     try {
 
         const [rows] = await db.query(
-            'SELECT * FROM articles ORDER BY id DESC'
+            'SELECT * FRsssssOM articles ORDER BY id DESC'
         );
 
         res.json({
